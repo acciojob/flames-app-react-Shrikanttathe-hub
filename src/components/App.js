@@ -38,7 +38,7 @@ const App = () => {
         return(
             <div id="main">
               <form>
-                <input type="text" data-testid="input1" placeholder="Enter First Name" 
+                <input type="text" data-testid="input1" placeholder="Enter First Name" Name = name1
                 onChange={(e)=>setName1(e.target.value)} 
                 value={name1}
                

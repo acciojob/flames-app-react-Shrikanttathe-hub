@@ -39,13 +39,16 @@ const App = () => {
             <div id="main">
               <form>
                 <input type="text" data-testid="input1" placeholder="Enter First Name" 
+                 name="name1"
                 onChange={(e)=>setName1(e.target.value)} 
-                name="name1"
+                value={name1}
                
                 />
                 <input type="text" data-testid="input2" placeholder="Enter Second Name"
+                  name="name2"
                  onChange={(e)=>setName2(e.target.value)} 
-                name="name2"
+                 value={name2}
+                 
                  />
                 <button data-testid="calculate_relationship" type="submit"
                 onClick={calculateRelationship}

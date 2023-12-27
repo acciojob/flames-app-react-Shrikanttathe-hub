@@ -31,7 +31,7 @@ const App = () => {
          setName1(str1);
          setName2(str2);
          setBtnClicked(true);
-        //   setRelationship(arr[(name1.length + name2.length)%6]);
+         setRelationship(arr[(str1.length + str2.length)%6]);
 
         }
 
@@ -58,7 +58,7 @@ const App = () => {
                         setName1("");
                         setName2("");
                         setBtnClicked(false); 
-                        setRelationship(arr[(name1.length + name2.length)%6]); 
+                        setRelationship(""); 
                     } }
                   >Clear</button>
               </form>
@@ -66,7 +66,7 @@ const App = () => {
               <h3 data-testid="answer">
               {
                 //btnClicked && arr[(name1.length + name2.length)%6]
-                relationship
+                  relationship
               }
               </h3>
 
